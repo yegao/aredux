@@ -1,0 +1,26 @@
+{
+  "presets":[
+    [
+      "env",{
+      "include": ["transform-es2015-arrow-functions", "es6.map"],
+      "exclude": ["transform-regenerator", "es6.set"]
+    }],
+    "react"
+  ],
+  "plugins": [
+    ["transform-object-rest-spread", { "useBuiltIns": true }],
+    ["transform-class-properties", { "spec": true }],
+    ["transform-export-extensions"]
+  ]
+}
+/* {
+  "presets": [
+    ["env", {
+      "modules": false,
+      "targets": {
+        "browsers": ["> 1%", "last 2 versions", "not ie <= 8"]
+      }
+    }],
+    "stage-2"
+  ]
+} */
